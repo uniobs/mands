@@ -12,6 +12,8 @@ body {
     font-size: 28px; /* Maior tamanho de fonte */
     text-transform: uppercase; /* Texto em maiúsculas */
     letter-spacing: 2px; /* Espaçamento entre letras */
+    max-width: 100%; /* Garantir que o título não ultrapasse a largura da tela */
+    padding: 0 20px; /* Adicionando preenchimento lateral para dispositivos menores */
 }
 
 .catalogo {
@@ -71,5 +73,9 @@ body {
 @media only screen and (max-width: 768px) {
     .card {
         width: calc(50% - 20px); /* Mudando para duas colunas em telas menores */
+    }
+    
+    .titulo {
+        font-size: 24px; /* Reduzindo o tamanho do título para telas menores */
     }
 }
