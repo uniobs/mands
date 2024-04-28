@@ -17,7 +17,7 @@ body {
 .catalogo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around; /* Alterado para tornar mais flexível */
 }
 
 .card {
@@ -65,4 +65,11 @@ body {
 
 .card a:hover {
     background-color: #d23d77; /* Rosa mais escuro ao passar o mouse */
+}
+
+/* Adicionando media query para tornar o layout responsivo */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Mudando para duas colunas em telas menores */
+    }
 }
