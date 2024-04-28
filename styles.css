@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f9f9f9;
@@ -8,6 +8,10 @@ body {
 .titulo {
     text-align: center;
     margin-bottom: 20px;
+    color: #ff69b4; /* Rosa pink */
+    font-size: 28px; /* Maior tamanho de fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre letras */
 }
 
 .catalogo {
@@ -20,8 +24,8 @@ body {
     width: calc(33.33% - 20px); /* Uma coluna de 3 com margem entre eles */
     margin-bottom: 20px;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais elevada */
+    border-radius: 10px; /* Borda mais arredondada */
     overflow: hidden;
 }
 
@@ -29,33 +33,36 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0; /* Arredondamento apenas nas bordas superiores */
 }
 
 .card h2 {
-    font-size: 18px;
-    padding: 10px;
+    font-size: 20px; /* Tamanho de fonte ligeiramente maior */
+    padding: 15px 10px; /* Mais espaço ao redor do título */
     margin: 0;
+    color: #ff69b4; /* Rosa pink */
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 16px; /* Tamanho de fonte ligeiramente maior */
     padding: 0 10px;
     margin: 0;
+    color: #666; /* Cor de texto mais suave */
 }
 
 .card a {
     display: block;
-    background-color: #007bff;
+    background-color: #ff69b4; /* Rosa pink */
     color: #fff;
     text-decoration: none;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
     font-weight: bold;
-    border-top: 1px solid #007bff;
+    border-top: 1px solid #ff69b4; /* Cor da borda combinando com o fundo */
     transition: background-color 0.3s;
+    border-radius: 0 0 10px 10px; /* Arredondamento apenas nas bordas inferiores */
 }
 
 .card a:hover {
-    background-color: #0056b3;
+    background-color: #d23d77; /* Rosa mais escuro ao passar o mouse */
 }
