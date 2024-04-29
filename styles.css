@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f9f9f9;
@@ -8,26 +8,20 @@ body {
 .titulo {
     text-align: center;
     margin-bottom: 20px;
-    color: #ff69b4; /* Rosa pink */
-    font-size: 28px; /* Maior tamanho de fonte */
-    text-transform: uppercase; /* Texto em maiúsculas */
-    letter-spacing: 2px; /* Espaçamento entre letras */
-    max-width: 100%; /* Garantir que o título não ultrapasse a largura da tela */
-    padding: 0 20px; /* Adicionando preenchimento lateral para dispositivos menores */
 }
 
 .catalogo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Alterado para tornar mais flexível */
+    justify-content: space-between;
 }
 
 .card {
     width: calc(33.33% - 20px); /* Uma coluna de 3 com margem entre eles */
     margin-bottom: 20px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais elevada */
-    border-radius: 10px; /* Borda mais arredondada */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -35,47 +29,33 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 10px 10px 0 0; /* Arredondamento apenas nas bordas superiores */
+    border-bottom: 1px solid #ddd;
 }
 
 .card h2 {
-    font-size: 20px; /* Tamanho de fonte ligeiramente maior */
-    padding: 15px 10px; /* Mais espaço ao redor do título */
+    font-size: 18px;
+    padding: 10px;
     margin: 0;
-    color: #ff69b4; /* Rosa pink */
 }
 
 .card p {
-    font-size: 16px; /* Tamanho de fonte ligeiramente maior */
+    font-size: 14px;
     padding: 0 10px;
     margin: 0;
-    color: #666; /* Cor de texto mais suave */
 }
 
 .card a {
     display: block;
-    background-color: #ff69b4; /* Rosa pink */
+    background-color: #007bff;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    padding: 12px;
+    padding: 10px;
     font-weight: bold;
-    border-top: 1px solid #ff69b4; /* Cor da borda combinando com o fundo */
+    border-top: 1px solid #007bff;
     transition: background-color 0.3s;
-    border-radius: 0 0 10px 10px; /* Arredondamento apenas nas bordas inferiores */
 }
 
 .card a:hover {
-    background-color: #d23d77; /* Rosa mais escuro ao passar o mouse */
-}
-
-/* Adicionando media query para tornar o layout responsivo */
-@media only screen and (max-width: 768px) {
-    .card {
-        width: calc(50% - 20px); /* Mudando para duas colunas em telas menores */
-    }
-    
-    .titulo {
-        font-size: 24px; /* Reduzindo o tamanho do título para telas menores */
-    }
+    background-color: #0056b3;
 }
